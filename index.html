@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800&display=swap" rel="stylesheet">
+	<title>Prices</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+	$("#price").click(function(){
+		var sum=0; // начальное значение можно указать любое
+		$('#price :checked').each(function(){
+			sum+=parseInt($(this).val());
+		});
+		$('.sum').text("$"+sum);	
+	});
+});
+
+	</script>
+</head>
+<body>
+	<header id="head">
+		
+	</header>
+	<section class="global">
+		<section class="first">
+			<div class="nav">
+				<a href="#" class="link">Home &gt;</a>
+				<a href="#" class="link">Pages &gt;</a>
+				<a href="#" class="link">Pries</a>
+			</div>
+			<div class="Prices">
+				<b>Prices</b>
+			</div>
+			<p class="Prices_text">The following information s considered when charging the order:</p>
+			<div class="icon_main">
+
+			<div class="first_icon">
+				<div class="icon_bg">
+					<img src="img/icon1.png" alt="">
+				</div>
+				<div class="icon_text">Your duedate</div>
+				
+			</div>
+			<div class="first_icon">
+				<div class="icon_bg">
+					<img src="img/icon.png" alt="">
+				</div>
+				<div class="icon_text">Academic level</div>
+				
+			</div>
+			<div class="first_icon">
+				<div class="icon_bg">
+					<img src="img/icon2.png" alt="">
+				</div>
+				<div class="icon_text">Pages/words</div>
+				
+			</div>
+			</div>
+
+			<section class="form">
+				<div class="form_block">
+				<div class="bock_text">
+				Select currency
+			</div>
+
+<div class="block_radio">
+	<label class="container">
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark">USD</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">EUR</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">CAD</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">GBP</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">GBP</span>
+  </label>
+					</div>
+				</div>
+				<div class="form_block">
+				<div class="bock_text">
+				Type of services
+			</div>
+			
+<div class="imput_text "> <input type="text" name="text" placeholder="Resume/CV services"></div>
+				</div>
+				<div class="form_block">
+				<div class="bock_text">
+				Type level
+			</div>
+			
+<div class="imput_text select">
+	<select>
+		<option>Entry</option>
+  <option>Пункт 1</option>
+  <option>Пункт 2</option>
+</select>
+<b><span>&gt</span></b>
+</div>
+				</div>
+
+			</section>
+
+
+
+<main>
+		<div class="table_col">
+			<!-- непрацює -->
+			<!-- <div class="table_col-blue">Most popular</div>
+			<div class="table_col-yelov">Other</div> -->
+		</div>
+		<div class="table" id="price">
+		<div class="table_container">
+			<div class="table_container-title first">
+				Services
+			</div>
+			<div class="table_container-content blocked" >
+				<div class="block">
+	<label class="button first" >5 days</label>
+	<label class="button first" >3 days</label>
+	<label class="button first" >48 hourse</label>
+	<label class="button first" >24 hourse</label>
+	</div>
+</div>
+			</div>
+		<div class="table_container">
+			<div class="table_container-title">
+				Resume writing
+			</div>
+			<div class="table_container-content" >
+	<label for="box1" class="button">$125.55<input type="checkbox" id="box1" name="box1" value="125.55" class="sss"></label>
+	<label for="box2" class="button">$125.55<input type="checkbox" id="box2" name="box2" value="125.55"></label>
+	<label for="box3" class="button">$125.55<input type="checkbox" id="box3" name="box3" value="125.55"></label>
+	<label for="box4" class="button">$125.55<input type="checkbox" id="box4" name="box4" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				Resume editing
+			</div>
+			<div class="table_container-content" >
+	<label for="box5" class="button">$125.55<input type="checkbox" id="box5" name="box5" value="125.55"></label>
+	<label for="box6" class="button">$125.55<input type="checkbox" id="box6" name="box6" value="125.55"></label>
+	<label for="box7" class="button">$125.55<input type="checkbox" id="box7" name="box7" value="125.55"></label>
+	<label for="box8" class="button">$125.55<input type="checkbox" id="box8" name="box8" value="125.55"></label>
+</div>
+			</div>
+				<div class="table_container">
+			<div class="table_container-title">
+				CV writing
+			</div>
+			<div class="table_container-content" >
+	<label for="box9" class="button">$125.55<input type="checkbox" id="box9" name="box9" value="125.55" class="sss"></label>
+	<label for="box10" class="button">$125.55<input type="checkbox" id="box10" name="box10" value="125.55"></label>
+	<label for="box11" class="button">$125.55<input type="checkbox" id="box11" name="box11" value="125.55"></label>
+	<label for="box12" class="button">$125.55<input type="checkbox" id="box12" name="box12" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				CV editing
+			</div>
+			<div class="table_container-content" >
+	<label for="box13" class="button">$125.55<input type="checkbox" id="box13" name="box13" value="125.55"></label>
+	<label for="box14" class="button">$125.55<input type="checkbox" id="box14" name="box14" value="125.55"></label>
+	<label for="box15" class="button">$125.55<input type="checkbox" id="box15" name="box15" value="125.55"></label>
+	<label for="box16" class="button">$125.55<input type="checkbox" id="box16" name="box16" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				Cover letter writing
+			</div>
+			<div class="table_container-content" >
+	<label for="box17" class="button">$125.55<input type="checkbox" id="box17" name="box17" value="125.55" class="sss"></label>
+	<label for="box18" class="button">$125.55<input type="checkbox" id="box18" name="box18" value="125.55"></label>
+	<label for="box19" class="button">$125.55<input type="checkbox" id="box19" name="box19" value="125.55"></label>
+	<label for="box20" class="button">$125.55<input type="checkbox" id="box20" name="box20" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				LinkedIn® Pro Bio
+			</div>
+			<div class="table_container-content" >
+	<label for="box21" class="button">$125.55<input type="checkbox" id="box21" name="box21" value="125.55"></label>
+	<label for="box22" class="button">$125.55<input type="checkbox" id="box22" name="box22" value="125.55"></label>
+	<label for="box23" class="button">$125.55<input type="checkbox" id="box23" name="box23" value="125.55"></label>
+	<label for="box24" class="button">$125.55<input type="checkbox" id="box24" name="box24" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				Resume design services
+			</div>
+			<div class="table_container-content" >
+	<label for="box25" class="button">$125.55<input type="checkbox" id="box25" name="box25" value="125.55" class="sss"></label>
+	<label for="box26" class="button">$125.55<input type="checkbox" id="box26" name="box26" value="125.55"></label>
+	<label for="box27" class="button">$125.55<input type="checkbox" id="box27" name="box27" value="125.55"></label>
+	<label for="box28" class="button">$125.55<input type="checkbox" id="box28" name="box28" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				Resume/CV review
+			</div>
+			<div class="table_container-content" >
+	<label for="box29" class="button">$125.55<input type="checkbox" id="box29" name="box29" value="125.55"></label>
+	<label for="box30" class="button">$125.55<input type="checkbox" id="box30" name="box30" value="125.55"></label>
+	<label for="box31" class="button">$125.55<input type="checkbox" id="box31" name="box31" value="125.55"></label>
+	<label for="box32" class="button">$125.55<input type="checkbox" id="box32" name="box32" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				Basic Package: Resume + CV writing
+			</div>
+			<div class="table_container-content" >
+	<label for="box33" class="button">$125.55<input type="checkbox" id="box33" name="box33" value="125.55" class="sss"></label>
+	<label for="box34" class="button">$125.55<input type="checkbox" id="box34" name="box34" value="125.55"></label>
+	<label for="box35" class="button">$125.55<input type="checkbox" id="box35" name="box35" value="125.55"></label>
+	<label for="box36" class="button">$125.55<input type="checkbox" id="box36" name="box36" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				Resume Package: Resume + Cover letter writing
+			</div>
+			<div class="table_container-content" >
+	<label for="box37" class="button">$125.55<input type="checkbox" id="box37" name="box37" value="125.55"></label>
+	<label for="box38" class="button">$125.55<input type="checkbox" id="box38" name="box38" value="125.55"></label>
+	<label for="box39" class="button">$125.55<input type="checkbox" id="box39" name="box39" value="125.55"></label>
+	<label for="box40" class="button">$125.55<input type="checkbox" id="box40" name="box40" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				CV Package: CV + cover letter writing
+			</div>
+			<div class="table_container-content" >
+	<label for="box41" class="button">$125.55<input type="checkbox" id="box41" name="box41" value="125.55" class="sss"></label>
+	<label for="box42" class="button">$125.55<input type="checkbox" id="box42" name="box42" value="125.55"></label>
+	<label for="box43" class="button">$125.55<input type="checkbox" id="box43" name="box43" value="125.55"></label>
+	<label for="box44" class="button">$125.55<input type="checkbox" id="box44" name="box44" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				Full Resume Package: Resume + Cover Letter + Thank-you/Follow-u
+			</div>
+			<div class="table_container-content" >
+	<label for="box45" class="button">$125.55<input type="checkbox" id="box45" name="box45" value="125.55"></label>
+	<label for="box46" class="button">$125.55<input type="checkbox" id="box46" name="box46" value="125.55"></label>
+	<label for="box47" class="button">$125.55<input type="checkbox" id="box47" name="box47" value="125.55"></label>
+	<label for="box48" class="button">$125.55<input type="checkbox" id="box48" name="box48" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				Full CV Package: CV + Cover Letter + Thank-you/Follow-up Letter
+			</div>
+			<div class="table_container-content" >
+	<label for="box49" class="button">$125.55<input type="checkbox" id="box49" name="box49" value="125.55" class="sss"></label>
+	<label for="box50" class="button">$125.55<input type="checkbox" id="box50" name="box50" value="125.55"></label>
+	<label for="box51" class="button">$125.55<input type="checkbox" id="box51" name="box51" value="125.55"></label>
+	<label for="box52" class="button">$125.55<input type="checkbox" id="box52" name="box52" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				New! E-Cover Letter Writing
+			</div>
+			<div class="table_container-content" >
+	<label for="box53" class="button">$125.55<input type="checkbox" id="box53" name="box53" value="125.55"></label>
+	<label for="box54" class="button">$125.55<input type="checkbox" id="box54" name="box54" value="125.55"></label>
+	<label for="box55" class="button">$125.55<input type="checkbox" id="box55" name="box55" value="125.55"></label>
+	<label for="box56" class="button">$125.55<input type="checkbox" id="box56" name="box56" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				Online Resume Storage
+			</div>
+			<div class="table_container-content" >
+	<label for="box57" class="button">$125.55<input type="checkbox" id="box57" name="box57" value="125.55" class="sss"></label>
+	<label for="box58" class="button">$125.55<input type="checkbox" id="box58" name="box58" value="125.55"></label>
+	<label for="box59" class="button">$125.55<input type="checkbox" id="box59" name="box59" value="125.55"></label>
+	<label for="box60" class="button">$125.55<input type="checkbox" id="box60" name="box60" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				Resume Distribution to Employment Agencies
+			</div>
+			<div class="table_container-content" >
+	<label for="box61" class="button">$125.55<input type="checkbox" id="box61" name="box61" value="125.55"></label>
+	<label for="box62" class="button">$125.55<input type="checkbox" id="box62" name="box62" value="125.55"></label>
+	<label for="box63" class="button">$125.55<input type="checkbox" id="box63" name="box63" value="125.55"></label>
+	<label for="box64" class="button">$125.55<input type="checkbox" id="box64" name="box64" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				Thank You & Follow-up Letters
+			</div>
+			<div class="table_container-content" >
+	<label for="box65" class="button">$125.55<input type="checkbox" id="box65" name="box65" value="125.55" class="sss"></label>
+	<label for="box66" class="button">$125.55<input type="checkbox" id="box66" name="box66" value="125.55"></label>
+	<label for="box67" class="button">$125.55<input type="checkbox" id="box67" name="box67" value="125.55"></label>
+	<label for="box68" class="button">$125.55<input type="checkbox" id="box68" name="box68" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg">
+			<div class="table_container-title">
+				KSAs - Knowledge, Skills, Abilities
+			</div>
+			<div class="table_container-content" >
+	<label for="box69" class="button">$125.55<input type="checkbox" id="box69" name="box69" value="125.55"></label>
+	<label for="box70" class="button">$125.55<input type="checkbox" id="box70" name="box70" value="125.55"></label>
+	<label for="box71" class="button">$125.55<input type="checkbox" id="box71" name="box71" value="125.55"></label>
+	<label for="box72" class="button">$125.55<input type="checkbox" id="box72" name="box72" value="125.55"></label>
+</div>
+			</div>	<div class="table_container">
+			<div class="table_container-title">
+				Interview Tips
+			</div>
+			<div class="table_container-content" >
+	<label for="box73" class="button">$125.55<input type="checkbox" id="box73" name="box73" value="125.55" class="sss"></label>
+	<label for="box74" class="button">$125.55<input type="checkbox" id="box74" name="box74" value="125.55"></label>
+	<label for="box75" class="button">$125.55<input type="checkbox" id="box75" name="box75" value="125.55"></label>
+	<label for="box76" class="button">$125.55<input type="checkbox" id="box76" name="box76" value="125.55"></label>
+</div>
+			</div>
+			<div class="table_container bg ">
+			<div class="table_container-title">
+				List of International Recruiting Agencies
+			</div>
+			<div class="table_container-content " >
+	<label for="box77" class="button">$125.55<input type="checkbox" id="box77" name="box77" value="125.55"></label>
+	<label for="box78" class="button">$125.55<input type="checkbox" id="box78" name="box78" value="125.55"></label>
+	<label for="box79" class="button">$125.55<input type="checkbox" id="box79" name="box79" value="125.55"></label>
+	<label for="box80" class="button">$125.55<input type="checkbox" id="box80" name="box80" value="125.55"></label>
+</div>
+			</div>
+
+		</div>
+	</div>
+</main>
+<div class="blok_one">
+<div class="result">
+	<span class="total">Total price:</span>
+	<span class="sum">0</span></div>
+	<div class="blok_one_button">
+		<a href="#">proceed to order</a>
+	</div>
+	</div>
+
+		</section>
+		<section class="two">
+		<div class="blok_tree">
+			<h3 class="blok_tree_title">
+				<img src="img/grasstwo.png" alt="grass">
+				<span>Free features</span>
+			</h3>
+			<div class="blok_tree_text">
+				Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit. 
+Adipisci amet, architecto c
+umque libero magni minima no
+bis non sunt tempora v
+oluptatum!Lorem ipsit amet, co
+nsectetur adipisicing elit. 
+Adipisci amet, architecto c
+umque libero magni minima no
+bis non sunt tempora v
+oluptatum!Lorem ipsumamet, co
+nsectetur adipisicing elit. 
+Adipisci amet, architecto c
+umque libero magni minima no
+bis non sunt tempora v
+oluptatum!
+			</div>
+		</div>
+		<div class="blok_tree">
+			<div class="blok_tree_text">
+				Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit. 
+Adipisci amet, architecto c
+umque libero magni minima no
+bis non sunt tempora v
+oluptatum!Lorem ipsit amet, co
+nsectetur adipisicing elit. 
+Adipisci amet, architecto c
+umque libero magni minima no
+bis non sunt tempora v
+oluptat
+			</div>
+		</div>
+		
+		<div class="blok_tree">
+			<div class="blok_tree_text">
+				Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit. 
+Adipisci amet, architecto c
+umque libero magni minima no
+bis non sunt tempora v
+oluptatum!Lorem ipsit amet, co
+nsectetur adipisicing elit. 
+Adipisci amet, architecto c
+umque libero magni minima no
+bis non sunt tempora v
+oluptat
+			</div>
+		</div>
+	</section>
+	</section>
+	<h2 class="Our_stats">Our stats</h2>
+<div class="icon_main main_container">
+
+			<div class="first_icon">
+				<div class="icon_bg">
+					<img src="img/imagetwo2.png" alt="">
+				</div>
+				<div class="icon_text">Customers</div>
+				<span class="icon_span">665</span>
+				
+			</div>
+			<div class="first_icon">
+				<div class="icon_bg">
+					<img src="img/imagetwo3.png" alt="">
+				</div>
+				<div class="icon_text">Witers active</div>
+				<span class="icon_span">169</span>
+				
+			</div>
+			<div class="first_icon">
+				<div class="icon_bg">
+					<img src="img/imagetwo4.png" alt="">
+				</div>
+				<div class="icon_text">Average quality score</div>
+				<span class="icon_span">9.5/10</span>
+			</div>
+			<div class="first_icon">
+				<div class="icon_bg">
+					<img src="img/imagetwo5.png" alt="">
+				</div>
+				<div class="icon_text">Writers online  </div>
+				<span class="icon_span">73</span>
+			</div>
+			</div>
+			<img src="img/grass.png" alt="grass" class="grass">
+	<footer>
+		<div class="grass1">
+		<img src="img/grass1.png" alt="grass" >
+		</div>
+	</footer>
+
+</body>
+</html>
